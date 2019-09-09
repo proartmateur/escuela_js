@@ -1,0 +1,46 @@
+/* 
+    Con la ayuda de Leonidas Esteban aprendí a maquetar
+    de esta manera usando flexbox.
+*/
+
+// Usamos Body como retícula flexbox
+body{
+    // Seteamos el display a flexbox
+    display: flex;
+    // Dibujamndo los elementos un tag bajo el siguiente
+    flex-direction:column;
+    // Reseteando los márgenes a 0px 
+    margin:0px;
+
+    // No es lo mismo usar min-height que height
+    // Mientras que height solamente muestra su contendio
+    // Hasta cierto punto dentro del html, es decir
+    // hasta donde le especifiquemos.
+
+    // min-height muestra el contendio tomando como tamaño mínico 
+    // el vaor definido en esta propiedad de css
+    min-height: 100vh;    
+}
+
+.header{
+    // Depurando el resultado
+    border: solid red 1px;
+    
+    //Cambiando el tamaño del header
+    height: 200px;
+
+}
+
+.main{
+
+    // Dependiendo de cuánto miden 
+    // el header y footer, esta sección crecerá o se hará más pequeña.
+    border: solid green 1px;
+    flex-grow: 1;
+
+}
+
+footer{
+    // Depurando el resultado
+    border: solid blue 1px;
+}
